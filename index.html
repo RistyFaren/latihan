@@ -1,0 +1,157 @@
+<html>
+   <style>
+    table, th, td {
+  border:1px solid black;
+}
+    .login{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+    .box1 {
+        width: 10rem;
+        height: 10rem;
+        background-color: #f56c6c;
+    }
+    .box2{
+        width: 10rem;
+        height: 10rem;
+        background-color: blue;
+    }
+    .box3{
+        width: 10rem;
+        height: 10rem;
+        background-color: blueviolet;
+    }
+    .sticky{
+
+    }
+    .comment-section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.comment {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form label,
+.comment-form textarea,
+.comment-form input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #45a049;
+}
+.social-media-icons {
+  margin-top: 15px;
+}
+
+.social-media-icons a {
+  margin-right: 15px;
+  color: #007bff; /* Warna ikon sosial media (Twitter biru) */
+}
+   </style> 
+   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <title>Belajar bareng</title></head>
+   <body>
+    <h1>Login Form</h1>
+    <form action="" class="login">
+        <label for="username">Username :</label> 
+        <input 
+            style="margin-bottom: 10px;" 
+            placeholder="Username" 
+            type="text"
+            id="username" 
+            name="username">
+        </input>
+        <label for="password">Password :</label> 
+        <input 
+            style="margin-bottom: 10px;" 
+            placeholder="Password" 
+            type="password"
+            id="password" 
+            name="password">
+        </input>
+        <button type="submit">submit</button>
+    </form>
+    <table>
+    <thead>
+          <tr>
+            <th rowspan="2">Company</th>
+            <th>Contact</th>
+            <th colspan="2">Country</th>
+          </tr>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+    </thead>
+    <tbody>
+          <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mexico</td>
+            <td>Germany</td>
+          </tr>
+    </tbody>
+      </table>
+      <div class="comment-section">
+        <h2>Comments</h2>
+        <div class="comment">
+          <p><strong>John Doe:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="comment">
+          <p><strong>Jane Smith:</strong> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+        <!-- Formulir untuk menambahkan komentar baru -->
+        <form class="comment-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="comment">Comment:</label>
+          <textarea id="comment" name="comment" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- image -->
+      <h2>Image</h2>
+      <img src="poster.png" alt="poster" width="200" height="270">
+      
+      <!-- Audio -->
+      <h2>Audio</h2>
+      <audio src="" controls>
+        your browser doesnt support the video element.
+      </audio>
+
+      <!-- Video -->
+      <h2>Video</h2>
+      <video src="video.mp4" width="600" height="400" controls>
+        Your browser doesnt support the video element.
+      </video>
+      <div class="social-media-icons">
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+      </div>
+   </body>
+</html>
